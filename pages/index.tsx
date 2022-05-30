@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
-
+import  Link  from 'next/link';
 
 //Home:React.FC
 const Home: NextPage = () => {
   return (
-  <div>home here </div>
+    <>
+      <div>home here </div>
+      <Link href="/atm/first">
+        <a>this page!</a>
+      </Link>
+    </>
   )
 }
 

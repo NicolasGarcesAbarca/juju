@@ -5,29 +5,6 @@ import Head from 'next/head'
 import Script from 'next/script'
 import Layout from '../../components/layout'
 
-let name: string = 'wea'
-let hola: boolean = true
-let array: string[] = ['a', 'b', 'c']
-let role: [number, string]
-type Person = { name: string, age: number }
-let person: Person = { name: 'wea', age: 18 }
-let arrayPerson: Person[]= [{ name: 'wea', age: 18 }, { name: 'wea', age: 18 }]
-
-function printwea(name:string){
-    console.log(name)
-}
-printwea('wea')
-//never returns nothing
-//
-let funky:(name:string)=>void;
-funky = (name:string)=>{
-    return 1;
-}
-
-interface Person1{
-    name:string;
-    age:number;
-}
 
 const First: NextPage = () => {
     return (
