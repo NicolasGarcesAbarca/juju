@@ -1,9 +1,9 @@
-import Layout from "../../components/layout";
-import Link from "next/link";
-import { GetStaticProps } from "next";
+import Layout from '../../components/AppLayout'
+import Link from 'next/link'
+import { GetStaticProps } from 'next'
 
-const Main=({data}:{data:any})=>{
-    return(
+const Main = ({ data }:{data:any}) => {
+  return (
         <Layout>
             <h1>Example Page</h1>
             <Link href={'/'}>
@@ -11,11 +11,11 @@ const Main=({data}:{data:any})=>{
             </Link>
             <p>{data.name}</p>
         </Layout>
-    )
+  )
 }
-export const getStaticProps:GetStaticProps = async ()=>{
-    const res=await fetch('http://0.0.0.0:3000/api/example');
-    const data=await res.json();
-    return {props:{data}};
+export const getStaticProps:GetStaticProps = async () => {
+  const res = await fetch('http://0.0.0.0:3000/api/example')
+  const data = await res.json()
+  return { props: { data } }
 }
-export default Main;
+export default Main
