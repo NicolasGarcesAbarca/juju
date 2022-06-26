@@ -16,9 +16,7 @@ export const globalStyles = css.global`
             background-size:50px 50px;
 
         }
-        h1{
-            color: hsl(290, 100%, 20%);
-        }
+   
 `
 
 export default css`
@@ -28,11 +26,15 @@ export default css`
         height:100vh;
     }
     main{
-    background:#fff;
-    border-radius:10px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
-    width:100%;
-    height:100%;
+        background:#fff;
+        border-radius:10px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.1);
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @media (min-width: ${breakpoints.mobile}) {
         main{

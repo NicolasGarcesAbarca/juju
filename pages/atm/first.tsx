@@ -5,9 +5,8 @@ import Head from 'next/head'
 import Script from 'next/script'
 import Layout from '../../components/AppLayout'
 
-
 const First: NextPage = () => {
-    return (
+  return (
         <Layout>
             <Head>
                 <title>Juju atm</title>
@@ -16,7 +15,7 @@ const First: NextPage = () => {
                 src="https://connect.facebook.net/en_US/sdk.js"
                 strategy="lazyOnload"
                 onLoad={() =>
-                    console.log(`script loaded correctly, window.FB has been populated`)
+                  console.log('script loaded correctly, window.FB has been populated')
                 }
             />
             <h1>First Post</h1>
@@ -32,7 +31,7 @@ const First: NextPage = () => {
                 alt="Your Name"
             />
         </Layout>
-    )
+  )
 }
 
 export default First
